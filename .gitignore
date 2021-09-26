@@ -1,0 +1,5 @@
+flask_session
+.vscode
+app.db
+__pycache__
+game_save.js

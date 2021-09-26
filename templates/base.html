@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %} {% endblock %}</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    
+    
+</head>
+
+<body>
+    <nav id="sidebar">
+    
+        <a href="{{ url_for('game')}}">Play</a>
+        <a href="{{ url_for('register')}}">Register</a>
+        <a href="{{ url_for('login')}}">Login</a>
+            
+        
+    </nav>
+    {% block main_content %}
+    {% endblock %}
+    
+</body>
+
+</html>

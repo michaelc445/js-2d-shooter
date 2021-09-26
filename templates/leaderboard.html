@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<table>
+    <caption>Leaderboard</caption>
+    <th>Username</th>
+    <th>Score</th>
+    {% for row in result %}
+        <tr>
+            {% for item in row %}
+            <td>{{item}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+<a href = "{{url_for('game')}}">Play Again</a>
+{% endblock %}

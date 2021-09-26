@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %} {% endblock %}</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    <script src="{{ url_for('static', filename='game.js') }}" type="module"></script>
+    
+</head>
+
+<body id="game_body">
+    <section id="game">
+        <canvas width="512" height="512">
+
+        </canvas>
+        <p id="timer"></p>
+        <p id ="username" style="display:None">{{username}}</p>
+        <p id="hp"></p>
+        <p id="score"></p>
+
+    </section>
+    
+    
+</body>
+
+</html>
+
+
+
